@@ -536,6 +536,61 @@ footer .copyright p {
   outline: none;
   transition: 0.2 ease;
 }
+
+/* single page css starts */
+#prodetails {
+  display: flex;
+  margin-top: 20px;
+}
+#prodetails .single-pro-img {
+  width: 40%;
+  margin-right: 50px;
+}
+.small-img-group {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3px;
+}
+.small-img-col {
+  flex-basis: 24%;
+  cursor: pointer;
+}
+#prodetails .single-pro-details {
+  width: 50%;
+  padding-top: 30px;
+}
+
+#prodetails .single-pro-details h4 {
+  padding: 40px 0 20px 0;
+}
+#prodetails .single-pro-details h2 {
+  font-size: 26px;
+}
+#prodetails .single-pro-details select {
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+#prodetails .single-pro-details input {
+  width: 50px;
+  height: 47px;
+  padding-left: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#prodetails .single-pro-details button {
+  background-color: #043e42;
+  color: #fff;
+}
+#prodetails .single-pro-details input:focus,
+#prodetails .single-pro-details select:focus {
+  outline: none;
+}
+#prodetails .single-pro-details span {
+  font-size: 20px;
+  line-height: 35px;
+}
+/* single page css ends */
 /* Media Query Starts */
 @media (max-width: 799px) {
   #mobile {
@@ -601,13 +656,27 @@ footer .copyright p {
     padding: 30px;
     margin-bottom: 3rem;
   }
+
+  #newsletter .form {
+    width: 60%;
+  }
   #main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 40vh;
   }
+  /* single page start */
 
+  #prodetails {
+    display: flex;
+    flex-direction: column;
+  }
+  #prodetails .single-pro-img,
+  #prodetails .single-pro-details {
+    width: 100%;
+  }
+  /* single page ends */
   /* #feature {
     justify-content: center;
   }
@@ -657,6 +726,10 @@ footer .copyright p {
   #sm-banner2 .sm-banner-box {
     min-width: 300;
     height: 20vh;
+  }
+
+  #newsletter .newstext p {
+    line-height: 20px;
   }
   .section-m1 {
     margin: 0;
